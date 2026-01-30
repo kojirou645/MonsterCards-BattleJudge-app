@@ -37,14 +37,16 @@
 
         <!-- 初期短針設定 -->
         <div class="bg-slate-800 rounded-xl p-6 mb-8 border border-slate-700 shadow-xl">
-            <div class="flex flex-col items-center gap-4">
-                <label class="font-bold text-orange-400">短針(有利効果):</label>
-                <div id="needle-options" class="flex flex-wrap gap-2 justify-center bg-slate-700 p-2 rounded-xl">
-                    <!-- JSで一度だけ生成されます -->
-                </div>
-                <input type="hidden" id="initial-needle" value="0">
-            </div>
-        </div>
+              <div class="flex flex-col items-center gap-4">
+                <div class="text-center"> <label class="font-bold text-orange-400">短針(有利効果):</label>
+                       <p class="text-xs text-slate-400 mt-1">マイナスなほど防衛側が有利</p>
+                          </div>
+
+                        <div id="needle-options" class="flex flex-wrap gap-2 justify-center bg-slate-700 p-2 rounded-xl">
+                      </div>
+                     <input type="hidden" id="initial-needle" value="0">
+                  </div>
+             </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <!-- DEFENDER (防御側) -->
@@ -310,4 +312,5 @@
         init();
     </script>
 </body>
+
 </html>
